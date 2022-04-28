@@ -29,7 +29,7 @@ namespace amazon_app.Droid
 
         async Task SimulateStartUp()
         {
-            await Task.Delay(TimeSpan.FromSeconds(4));
+            await Task.Delay(TimeSpan.FromSeconds(3));
             StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }
     }
