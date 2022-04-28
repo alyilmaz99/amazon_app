@@ -1,0 +1,15 @@
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\bin\Debug\netstandard2.0\amazon_app.deps.json
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\bin\Debug\netstandard2.0\amazon_app.dll
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\bin\Debug\netstandard2.0\ref\amazon_app.dll
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\bin\Debug\netstandard2.0\amazon_app.pdb
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.csproj.AssemblyReference.cache
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.AssemblyInfoInputs.cache
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.AssemblyInfo.cs
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.csproj.CoreCompileInputs.cache
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.dll
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\ref\amazon_app.dll
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.pdb
