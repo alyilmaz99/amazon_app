@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "RRw5zpDV5qQyAqXGDMCqNH11yisZJ6q+9mkcUfqBdTalMMT4NPv9+L1pp1mfaFvPT5LupjniKJFj03sPr/21TA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ali\\source\\repos\\amazon_app\\amazon_app\\amazon_app.iOS\\amazon_app.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ali\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
