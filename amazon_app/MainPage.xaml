@@ -6,13 +6,64 @@
              xmlns:cm="clr-namespace:amazon_app.Views">
 
 
-    <ContentPage.Content>
-        <Frame Padding="0" Margin="20" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="Black" CornerRadius="10" HeightRequest="50" >
-            <SearchBar x:Name="MainSearchBar"
+    <ContentPage.Content >
+        <StackLayout BackgroundColor="#c0f9ec" Margin="0">
+            <Frame Padding="0" Margin="5" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="Black" CornerRadius="10" HeightRequest="50" >
+                <SearchBar x:Name="MainSearchBar"
                    SearchButtonPressed="MainSearchBar_SearchButtonPressed"
                    Placeholder="Seacrh Amazon"
                    BackgroundColor="White"
                    />
-        </Frame>
+            </Frame>
+            <StackLayout 
+                BackgroundColor="#c0f9ec"
+                HeightRequest="50"
+                Margin="0"
+                
+                >
+                <Button
+                    ImageSource="location.png"
+                    Text="Deliver to Turkey"
+                    VerticalOptions="Start"
+                    BackgroundColor="#c0f9ec"
+                    TextColor="Black"
+                    TextTransform="None"
+                    HorizontalOptions="Start"
+                    Padding="10"
+                    BorderColor="#c0f9ec"
+                    BorderWidth="0"
+                    />
+            </StackLayout>
+            <ScrollView Padding="0" Margin="0">
+                <CollectionView
+                ItemsSource="{Binding Photo}"
+                HeightRequest="250"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                HorizontalScrollBarVisibility="Never"
+                ItemsLayout="HorizontalList">
+                    <CollectionView.BindingContext>
+                        <vm:MainPageSliderViewModels>
+                        </vm:MainPageSliderViewModels>
+                    </CollectionView.BindingContext>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid RowDefinitions="Auto"
+                                  ColumnDefinitions="Auto">
+                                <Image Source="{Binding ImageSource}" 
+                                       Aspect="AspectFill"
+                                       WidthRequest="440"
+                                       Grid.Row="0"
+                                       Grid.Column="0"
+                                       HeightRequest="250"
+                                       
+                                       />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+            
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
