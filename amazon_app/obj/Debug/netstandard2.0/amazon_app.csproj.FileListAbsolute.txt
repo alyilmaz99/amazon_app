@@ -13,3 +13,4 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.dll
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\ref\amazon_app.dll
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.pdb
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs

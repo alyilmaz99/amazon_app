@@ -5,11 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-
+using Xamarin.Forms.Xaml;
+using amazon_app.Views;
 namespace amazon_app
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainPage : TabbedPage
     {
+      
         /*
          *Search Bar Test
         private readonly List<string> _searchTest = new List<string>
@@ -29,10 +32,9 @@ namespace amazon_app
         {
             InitializeComponent();
             // MainListView.ItemsSource = _searchTest; SEARCHBAR
-
+            
             BindingContext = this;
         }
-        
        
     }
 }

@@ -1,25 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
              x:Class="amazon_app.MainPage"
              xmlns:vm="clr-namespace:amazon_app.ViewModels"
-             xmlns:cm="clr-namespace:amazon_app.Views">
+             xmlns:cm="clr-namespace:amazon_app.Views"
+             windows:TabbedPage.HeaderIconsEnabled="true"
+            >
+    <windows:TabbedPage.HeaderIconsSize>
+        <Size>
+            <x:Arguments>
+                <x:Double>100</x:Double>
+                <x:Double>100</x:Double>
+            </x:Arguments>
+            
+        </Size>
+    </windows:TabbedPage.HeaderIconsSize>
 
 
-    <ContentPage.Content >
+
+    <ContentPage IconImageSource="home.png">
         <StackLayout BackgroundColor="#c0f9ec" Margin="0">
-            <Frame Padding="0" Margin="5" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="Black" CornerRadius="10" HeightRequest="50" >
+            <Frame Padding="0" Margin="10" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="#88ced8" CornerRadius="10" HeightRequest="50" >
                 <SearchBar x:Name="MainSearchBar"
                    SearchButtonPressed="MainSearchBar_SearchButtonPressed"
                    Placeholder="Seacrh Amazon"
-                   BackgroundColor="White"
+                   BackgroundColor="Transparent"
                    />
             </Frame>
             <StackLayout 
                 BackgroundColor="#c0f9ec"
                 HeightRequest="50"
                 Margin="0"
-                
                 >
                 <Button
                     ImageSource="location.png"
@@ -30,7 +44,7 @@
                     TextTransform="None"
                     HorizontalOptions="Start"
                     Padding="10"
-                    BorderColor="#c0f9ec"
+                    BorderColor="Transparent"
                     BorderWidth="0"
                     />
             </StackLayout>
@@ -56,7 +70,6 @@
                                        Grid.Row="0"
                                        Grid.Column="0"
                                        HeightRequest="250"
-                                       
                                        />
                             </Grid>
                         </DataTemplate>
@@ -65,5 +78,5 @@
             </ScrollView>
             
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </ContentPage>
+</TabbedPage>

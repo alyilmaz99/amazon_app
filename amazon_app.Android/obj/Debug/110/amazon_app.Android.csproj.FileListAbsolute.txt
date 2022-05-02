@@ -583,3 +583,6 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider2.jpg
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider3.jpg
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\location.png
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\home.png
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\profile.png
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\hamburger.png
