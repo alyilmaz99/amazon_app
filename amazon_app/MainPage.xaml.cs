@@ -28,8 +28,9 @@ namespace amazon_app
         public MainPage()
         {
             InitializeComponent();
-           // MainListView.ItemsSource = _searchTest; SEARCHBAR
+            // MainListView.ItemsSource = _searchTest; SEARCHBAR
 
+            BindingContext = this;
         }
         
        

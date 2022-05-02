@@ -577,3 +577,8 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider4.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider5.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider1.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider2.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\slider3.jpg
