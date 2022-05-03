@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              android:TabbedPage.ToolbarPlacement="Bottom"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
@@ -20,8 +20,7 @@
     </windows:TabbedPage.HeaderIconsSize>
 
 
-
-    <ContentPage IconImageSource="home.png">
+        <ContentPage.Content>
         <StackLayout BackgroundColor="#c0f9ec" Margin="0">
             <Frame Padding="0" Margin="10" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="#88ced8" CornerRadius="10" HeightRequest="50" >
                 <SearchBar x:Name="MainSearchBar"
@@ -75,8 +74,49 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
+
             </ScrollView>
+            <CarouselView ItemsSource="{Binding categories}" PeekAreaInsets="130" HeightRequest="170">
+                <CarouselView.BindingContext>
+                    <vm:CategoryViewModel>
+                    </vm:CategoryViewModel>
+                </CarouselView.BindingContext>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame  HeightRequest="180"
+                    WidthRequest="120"
+                    HasShadow="True"
+                    BackgroundColor="White"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="5"
+                    Margin="20"
+                    Padding="0"
+                >
+                            <Grid >
+                                <StackLayout VerticalOptions="EndAndExpand">
+                                    <Image Source="{Binding ImageSource}" 
+                           VerticalOptions="EndAndExpand"
+                           Aspect="AspectFill"/>
+                                </StackLayout>
+                                <StackLayout VerticalOptions="StartAndExpand" >
+                                    <Label Text="{Binding Name}" 
+                               TextColor="Black" 
+                               FontSize="15" 
+                               FontAttributes="none"
+                               Margin="15"
+                               BackgroundColor="White"
+                               VerticalOptions="Start"
+                               HorizontalOptions="Center"
+                               />
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
             
         </StackLayout>
-    </ContentPage>
-</TabbedPage>
+    </ContentPage.Content>
+</ContentPage>

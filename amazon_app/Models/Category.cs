@@ -6,7 +6,8 @@ namespace amazon_app.Models
 {
     public class Category
     {
-        public int Data { get; set; }
-        public string Text { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string ImageSource { get; set; }
     }
 }

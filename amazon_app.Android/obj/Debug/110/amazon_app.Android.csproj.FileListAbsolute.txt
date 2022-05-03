@@ -586,3 +586,8 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\home.png
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\profile.png
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\hamburger.png
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\man.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\mothersday.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\pc.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\sport.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\women.jpg

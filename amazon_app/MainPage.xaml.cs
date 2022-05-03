@@ -9,8 +9,8 @@ using Xamarin.Forms.Xaml;
 using amazon_app.Views;
 namespace amazon_app
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : TabbedPage
+   
+    public partial class MainPage : ContentPage
     {
       
         /*
