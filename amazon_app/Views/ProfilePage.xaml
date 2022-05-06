@@ -5,6 +5,18 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content >
         <StackLayout BackgroundColor="#c0f9ec">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Margin="20">
+                <Image Source="splash_logo"/>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="bell.png"/>
+                <Image Source="search.png"/>
+            </StackLayout>
+            <StackLayout Margin="30">
+                <Label Text="Sign in for the best experience" FontSize="Large" TextColor="DarkSlateGray" VerticalOptions="Center" HorizontalOptions="Center">
+
+                </Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
