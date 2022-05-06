@@ -16,6 +16,7 @@ namespace amazon_app
         {
 
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

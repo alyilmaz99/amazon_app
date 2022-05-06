@@ -5,7 +5,7 @@
              x:Class="amazon_app.Views.HomePage"
              xmlns:vm="clr-namespace:amazon_app.ViewModels"
              xmlns:cm="clr-namespace:amazon_app.Views"
-            
+            NavigationPage.HasNavigationBar="false"
             >
     <ContentPage.Content >
         <StackLayout BackgroundColor="#c0f9ec" Margin="0">

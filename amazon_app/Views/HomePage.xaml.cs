@@ -30,7 +30,7 @@ namespace amazon_app.Views
         {
             InitializeComponent();
             // MainListView.ItemsSource = _searchTest; SEARCHBAR
-
+            NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = this;
         }
     }

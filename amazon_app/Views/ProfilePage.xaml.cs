@@ -15,6 +15,7 @@ namespace amazon_app.Views
         public ProfilePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

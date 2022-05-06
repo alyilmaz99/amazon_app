@@ -7,22 +7,22 @@
        NavigationPage.HasNavigationBar="false">
 
     <TabBar >
-        <Tab Icon="home.png">
+        <Tab Icon="home.png" Shell.NavBarIsVisible="False" >
             <ShellContent>
                 <views:HomePage/>
             </ShellContent>
         </Tab>
-        <Tab Icon="profile.png">
+        <Tab Icon="profile.png" Shell.NavBarIsVisible="False" >
             <ShellContent>
                 <views:ProfilePage/>
             </ShellContent>
         </Tab>
-        <Tab Icon="location.png">
+        <Tab Icon="location.png" Shell.NavBarIsVisible="False" >
             <ShellContent>
                 <views:CartPage/>
             </ShellContent>
         </Tab>
-        <Tab Icon="hamburger.png">
+        <Tab Icon="hamburger.png" Shell.NavBarIsVisible="False" >
             <ShellContent>
                 <views:SettingsPage/>
             </ShellContent>

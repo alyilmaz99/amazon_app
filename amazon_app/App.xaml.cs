@@ -9,6 +9,7 @@ namespace amazon_app
         public App()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             MainPage = new AppShell();
         }
