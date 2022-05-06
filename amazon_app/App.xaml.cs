@@ -10,7 +10,7 @@ namespace amazon_app
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-
+            Device.SetFlags(new[] { "Amazon_Grad" });
             MainPage = new AppShell();
         }
 

@@ -4,9 +4,10 @@
              x:Class="amazon_app.Views.ProfilePage"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content >
-        <StackLayout BackgroundColor="#c0f9ec">
+        <StackLayout BackgroundColor="White">
             <StackLayout  Margin="20">
-                <Grid >
+                <Grid>
+                    
                     <Image Source="splash_logo" VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0"/>
                     <Image Source="bell.png" VerticalOptions="Start" HorizontalOptions="Center" HeightRequest="30" Grid.Column="2"/>
                     <Image Source="search.png" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="30" Grid.Column="2"/>
@@ -14,10 +15,11 @@
 
             </StackLayout>
             <StackLayout Margin="10">
-                <Label Text="Sign in for the best experience" FontSize="Large" TextColor="DarkSlateGray" VerticalOptions="Center" HorizontalOptions="Center">
-
-                </Label>
+                <Label Text="Sign in for the best experience" FontSize="Large" TextColor="DarkSlateGray" VerticalOptions="Center" HorizontalOptions="Center" Margin="30"/>
+                <Button BackgroundColor="#FF9900" Text="Sign in" TextTransform="None" Margin="10"/>
+                <Button BackgroundColor="#88ced8" Text="Create Account" TextTransform="None" Margin="10"/>
             </StackLayout>
+            <Image Source="loginscreen.png" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
