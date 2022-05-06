@@ -5,14 +5,15 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content >
         <StackLayout BackgroundColor="#c0f9ec">
-            <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Margin="20">
-                <Image Source="splash_logo"/>
+            <StackLayout  Margin="20">
+                <Grid >
+                    <Image Source="splash_logo" VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0"/>
+                    <Image Source="bell.png" VerticalOptions="Start" HorizontalOptions="Center" HeightRequest="30" Grid.Column="2"/>
+                    <Image Source="search.png" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="30" Grid.Column="2"/>
+                </Grid>
+
             </StackLayout>
-            <StackLayout>
-                <Image Source="bell.png"/>
-                <Image Source="search.png"/>
-            </StackLayout>
-            <StackLayout Margin="30">
+            <StackLayout Margin="10">
                 <Label Text="Sign in for the best experience" FontSize="Large" TextColor="DarkSlateGray" VerticalOptions="Center" HorizontalOptions="Center">
 
                 </Label>
