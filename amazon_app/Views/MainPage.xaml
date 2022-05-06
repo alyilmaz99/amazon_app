@@ -1,24 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             android:TabbedPage.ToolbarPlacement="Bottom"
-             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:android="http://schemas.android.com/apk/res/android"
              x:Class="amazon_app.MainPage"
              xmlns:vm="clr-namespace:amazon_app.ViewModels"
              xmlns:cm="clr-namespace:amazon_app.Views"
-             windows:TabbedPage.HeaderIconsEnabled="true"
-            >
-    <windows:TabbedPage.HeaderIconsSize>
-        <Size>
-            <x:Arguments>
-                <x:Double>100</x:Double>
-                <x:Double>100</x:Double>
-            </x:Arguments>
             
-        </Size>
-    </windows:TabbedPage.HeaderIconsSize>
-
+            >
+    
 
         <ContentPage.Content>
         <StackLayout BackgroundColor="#c0f9ec" Margin="0">
@@ -74,33 +63,35 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-
             </ScrollView>
-            <CarouselView ItemsSource="{Binding categories}" PeekAreaInsets="130" HeightRequest="170">
-                <CarouselView.BindingContext>
+            <CollectionView
+                                 HeightRequest="270"
+                                ItemsLayout="HorizontalList"
+                                VerticalOptions="Start"
+                ItemsSource="{Binding categories}"
+                >
+                <CollectionView.BindingContext>
                     <vm:CategoryViewModel>
                     </vm:CategoryViewModel>
-                </CarouselView.BindingContext>
-                <CarouselView.ItemTemplate>
+                    </CollectionView.BindingContext>
+                    <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame  HeightRequest="180"
-                    WidthRequest="120"
-                    HasShadow="True"
-                    BackgroundColor="White"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"
-                    CornerRadius="5"
-                    Margin="20"
-                    Padding="0"
-                >
-                            <Grid >
-                                <StackLayout VerticalOptions="EndAndExpand">
-                                    <Image Source="{Binding ImageSource}" 
-                           VerticalOptions="EndAndExpand"
-                           Aspect="AspectFill"/>
-                                </StackLayout>
-                                <StackLayout VerticalOptions="StartAndExpand" >
-                                    <Label Text="{Binding Name}" 
+                        <Grid Padding="0" >
+                            <Frame  HeightRequest="100"
+                                    WidthRequest="150"
+                                HasShadow="True"
+                                    BackgroundColor="Green"
+                                CornerRadius="5"
+                                Margin="10"
+                                Padding="0"
+                                >
+                                <Grid>
+                                    <StackLayout  Grid.Row="1" >
+                                        <Image Source="{Binding ImageSource}" 
+                                               Aspect="AspectFill"/>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="0" HeightRequest="3" BackgroundColor="Blue" >
+                                        <Label Text="{Binding Name}" 
                                TextColor="Black" 
                                FontSize="15" 
                                FontAttributes="none"
@@ -109,14 +100,16 @@
                                VerticalOptions="Start"
                                HorizontalOptions="Center"
                                />
-                                </StackLayout>
-                            </Grid>
-                        </Frame>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </Grid>
                     </DataTemplate>
-                </CarouselView.ItemTemplate>
-            </CarouselView>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+           
 
-            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

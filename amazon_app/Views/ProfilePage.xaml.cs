@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace amazon_app.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Profile : TabbedPage
+    public partial class ProfilePage : ContentPage
     {
-        public Profile()
+        public ProfilePage()
         {
             InitializeComponent();
         }
