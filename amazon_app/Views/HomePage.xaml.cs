@@ -1,24 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using amazon_app.Views;
-namespace amazon_app
+
+namespace amazon_app.Views
 {
-   
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class HomePage : ContentPage
     {
-      
         /*
-         *Search Bar Test
-        private readonly List<string> _searchTest = new List<string>
-        {
-            "as","d","f","g","ghjk","wes"
-        };*/
+        *Search Bar Test
+       private readonly List<string> _searchTest = new List<string>
+       {
+           "as","d","f","g","ghjk","wes"
+       };*/
         private void MainSearchBar_SearchButtonPressed(object sender, EventArgs e)
         {
             /*
@@ -27,14 +26,12 @@ namespace amazon_app
             MainListView.ItemsSource = searchResult;
             */
         }
-        
-        public MainPage()
+        public HomePage()
         {
             InitializeComponent();
             // MainListView.ItemsSource = _searchTest; SEARCHBAR
-            
+
             BindingContext = this;
         }
-       
     }
 }

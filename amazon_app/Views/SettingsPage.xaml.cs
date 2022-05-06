@@ -14,6 +14,7 @@ namespace amazon_app.Views
     {
         public SettingsPage()
         {
+
             InitializeComponent();
         }
     }

@@ -2,8 +2,30 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:amazon_app.Views"
        xmlns:local="clr-namespace:amazon_app"
-       x:Class="amazon_app.AppShell">
-    <TabBar>
-        <Tab>
+       xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+       x:Class="amazon_app.AppShell"
+       NavigationPage.HasNavigationBar="false">
+
+    <TabBar >
+        <Tab Icon="home.png">
+            <ShellContent>
+                <views:HomePage/>
+            </ShellContent>
+        </Tab>
+        <Tab Icon="profile.png">
+            <ShellContent>
+                <views:ProfilePage/>
+            </ShellContent>
+        </Tab>
+        <Tab Icon="location.png">
+            <ShellContent>
+                <views:CartPage/>
+            </ShellContent>
+        </Tab>
+        <Tab Icon="hamburger.png">
+            <ShellContent>
+                <views:SettingsPage/>
+            </ShellContent>
+        </Tab>
     </TabBar>
 </Shell>

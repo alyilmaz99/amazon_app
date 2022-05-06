@@ -10,10 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace amazon_app
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AppShell : ContentPage
+    public partial class AppShell : Shell
     {
         public AppShell()
         {
+
             InitializeComponent();
         }
     }

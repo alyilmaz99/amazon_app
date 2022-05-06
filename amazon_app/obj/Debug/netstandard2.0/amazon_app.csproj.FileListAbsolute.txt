@@ -5,7 +5,6 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\bin\Debug\netstandard
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.csproj.AssemblyReference.cache
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.AssemblyInfoInputs.cache
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.AssemblyInfo.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.csproj.CoreCompileInputs.cache
@@ -13,10 +12,8 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.dll
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\ref\amazon_app.dll
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\amazon_app.pdb
-C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Styles\Style.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\CartPage.xaml.g.cs
-C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
