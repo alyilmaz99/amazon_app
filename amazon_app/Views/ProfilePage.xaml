@@ -16,8 +16,8 @@
             </StackLayout>
             <StackLayout Margin="10">
                 <Label Text="Sign in for the best experience" FontSize="Large" TextColor="DarkSlateGray" VerticalOptions="Center" HorizontalOptions="Center" Margin="30"/>
-                <Button BackgroundColor="#FF9900" Text="Sign in" TextTransform="None" Margin="10"/>
-                <Button BackgroundColor="#88ced8" Text="Create Account" TextTransform="None" Margin="10"/>
+                <Button BackgroundColor="#FFD580" Text="Sign in" TextTransform="None" Margin="10" BorderColor="Black" BorderWidth="1"/>
+                <Button BackgroundColor="#88ced8" Text="Create Account" TextTransform="None" Margin="10" BorderColor="Black" BorderWidth="1" />
             </StackLayout>
             <Image Source="loginscreen.png" />
         </StackLayout>
