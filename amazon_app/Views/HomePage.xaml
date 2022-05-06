@@ -8,19 +8,20 @@
             NavigationPage.HasNavigationBar="false"
             >
     <ContentPage.Content >
-        <StackLayout BackgroundColor="#c0f9ec" Margin="0">
-            <Frame Padding="0" Margin="10" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="#88ced8" CornerRadius="10" HeightRequest="50" >
-                <SearchBar x:Name="MainSearchBar"
+        <ScrollView>
+            <StackLayout BackgroundColor="#c0f9ec" Margin="0">
+                <Frame Padding="0" Margin="10" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="#88ced8" CornerRadius="10" HeightRequest="50" >
+                    <SearchBar x:Name="MainSearchBar"
                    Placeholder="Seacrh Amazon"
                    BackgroundColor="Transparent"
                    />
-            </Frame>
-            <StackLayout 
+                </Frame>
+                <StackLayout 
                 BackgroundColor="#c0f9ec"
                 HeightRequest="50"
                 Margin="0"
                 >
-                <Button
+                    <Button
                     ImageSource="location.png"
                     Text="Deliver to Turkey"
                     VerticalOptions="Start"
@@ -32,49 +33,49 @@
                     BorderColor="Transparent"
                     BorderWidth="0"
                     />
-            </StackLayout>
-            <ScrollView Padding="0" Margin="0">
-                <CollectionView
+                </StackLayout>
+                <ScrollView Padding="0" Margin="0">
+                    <CollectionView
                 ItemsSource="{Binding Photo}"
                 HeightRequest="250"
                 HorizontalOptions="Fill"
                 VerticalOptions="Start"
                 HorizontalScrollBarVisibility="Never"
                 ItemsLayout="HorizontalList">
-                    <CollectionView.BindingContext>
-                        <vm:MainPageSliderViewModels>
-                        </vm:MainPageSliderViewModels>
-                    </CollectionView.BindingContext>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid RowDefinitions="Auto"
+                        <CollectionView.BindingContext>
+                            <vm:MainPageSliderViewModels>
+                            </vm:MainPageSliderViewModels>
+                        </CollectionView.BindingContext>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid RowDefinitions="Auto"
                                   ColumnDefinitions="Auto">
-                                <Image Source="{Binding ImageSource}" 
+                                    <Image Source="{Binding ImageSource}" 
                                        Aspect="AspectFill"
                                        WidthRequest="440"
                                        Grid.Row="0"
                                        Grid.Column="0"
                                        HeightRequest="250"
                                        />
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </ScrollView>
-            <CollectionView
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+                <CollectionView
                                  HeightRequest="270"
                                 ItemsLayout="HorizontalList"
                                 VerticalOptions="Start"
                 ItemsSource="{Binding categories}"
                 >
-                <CollectionView.BindingContext>
-                    <vm:CategoryViewModel>
-                    </vm:CategoryViewModel>
-                </CollectionView.BindingContext>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Padding="0" >
-                            <Frame  HeightRequest="100"
+                    <CollectionView.BindingContext>
+                        <vm:CategoryViewModel>
+                        </vm:CategoryViewModel>
+                    </CollectionView.BindingContext>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="0" >
+                                <Frame  HeightRequest="100"
                                     WidthRequest="150"
                                 HasShadow="True"
                                     BackgroundColor="Green"
@@ -82,13 +83,13 @@
                                 Margin="10"
                                 Padding="0"
                                 >
-                                <Grid>
-                                    <StackLayout  Grid.Row="1" >
-                                        <Image Source="{Binding ImageSource}" 
+                                    <Grid>
+                                        <StackLayout  Grid.Row="1" >
+                                            <Image Source="{Binding ImageSource}" 
                                                Aspect="AspectFill"/>
-                                    </StackLayout>
-                                    <StackLayout Grid.Row="0" HeightRequest="3" BackgroundColor="Blue" >
-                                        <Label Text="{Binding Name}" 
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="0" HeightRequest="3" BackgroundColor="Blue" >
+                                            <Label Text="{Binding Name}" 
                                TextColor="Black" 
                                FontSize="15" 
                                FontAttributes="none"
@@ -97,16 +98,19 @@
                                VerticalOptions="Start"
                                HorizontalOptions="Center"
                                />
-                                    </StackLayout>
-                                </Grid>
-                            </Frame>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <StackLayout>
+                    <Image Source="Shop1.png" Aspect="AspectFill">
 
-
-
-        </StackLayout>
+                    </Image>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

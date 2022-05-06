@@ -7,7 +7,7 @@
        NavigationPage.HasNavigationBar="false">
 
     <TabBar >
-        <Tab Icon="home.png" Shell.NavBarIsVisible="False" >
+        <Tab Icon="home2.png" Shell.NavBarIsVisible="False" >
             <ShellContent>
                 <views:HomePage/>
             </ShellContent>
@@ -17,7 +17,7 @@
                 <views:ProfilePage/>
             </ShellContent>
         </Tab>
-        <Tab Icon="location.png" Shell.NavBarIsVisible="False" >
+        <Tab Icon="cart3.png" Shell.NavBarIsVisible="False" >
             <ShellContent>
                 <views:CartPage/>
             </ShellContent>
