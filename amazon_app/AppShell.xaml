@@ -8,7 +8,7 @@
 
     <TabBar >
         <Tab Icon="home2.png" Shell.NavBarIsVisible="False" >
-            <ShellContent>
+            <ShellContent Route="HomePage">
                 <views:HomePage/>
             </ShellContent>
         </Tab>
@@ -18,7 +18,7 @@
             </ShellContent>
         </Tab>
         <Tab Icon="cart3.png" Shell.NavBarIsVisible="False" >
-            <ShellContent>
+            <ShellContent Route="Cart Page">
                 <views:CartPage/>
             </ShellContent>
         </Tab>

@@ -33,5 +33,10 @@ namespace amazon_app.Views
             NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = this;
         }
+
+        public async void OnImageNameTapped(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new CategoryPage());
+        }
     }
 }

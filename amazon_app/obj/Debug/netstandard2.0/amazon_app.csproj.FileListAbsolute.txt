@@ -17,3 +17,4 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app\obj\Debug\netstandard2.0\Views\CategoryPage.xaml.g.cs

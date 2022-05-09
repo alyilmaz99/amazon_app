@@ -62,12 +62,11 @@
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </ScrollView>
-                <CollectionView
-                                 HeightRequest="270"
+                <CollectionView 
+                                HeightRequest="270"
                                 ItemsLayout="HorizontalList"
                                 VerticalOptions="Start"
-                ItemsSource="{Binding categories}"
-                >
+                                ItemsSource="{Binding categories}">
                     <CollectionView.BindingContext>
                         <vm:CategoryViewModel>
                         </vm:CategoryViewModel>
@@ -75,29 +74,35 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid Padding="0" >
-                                <Frame  HeightRequest="100"
+                                <Frame
                                     WidthRequest="150"
                                 HasShadow="True"
-                                    BackgroundColor="Green"
                                 CornerRadius="5"
                                 Margin="10"
                                 Padding="0"
                                 >
-                                    <Grid>
-                                        <StackLayout  Grid.Row="1" >
+                                <Grid>
+                                   <StackLayout  Grid.Row="1" >
                                             <Image Source="{Binding ImageSource}" 
-                                               Aspect="AspectFill"/>
+                                               Aspect="AspectFill">
+                                                <Image.GestureRecognizers>
+                                                    <TapGestureRecognizer
+                                                         Tapped="OnImageNameTapped"
+                                                         NumberOfTapsRequired="1" />
+                                                </Image.GestureRecognizers>
+                                            </Image>
+                                            
                                         </StackLayout>
-                                        <StackLayout Grid.Row="0" HeightRequest="3" BackgroundColor="Blue" >
-                                            <Label Text="{Binding Name}" 
-                               TextColor="Black" 
-                               FontSize="15" 
-                               FontAttributes="none"
-                               Margin="15"
-                               BackgroundColor="White"
-                               VerticalOptions="Start"
-                               HorizontalOptions="Center"
-                               />
+                                        <StackLayout Grid.Row="0" HeightRequest="3">
+                                        <Label Text="{Binding Name}" 
+                                               TextColor="Black" 
+                                               FontSize="15" 
+                                               FontAttributes="none"
+                                               Margin="15"
+                                               BackgroundColor="White"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Center"
+                                               />
                                         </StackLayout>
                                     </Grid>
                                 </Frame>
@@ -107,7 +112,6 @@
                 </CollectionView>
                 <StackLayout>
                     <Image Source="Shop1.png" Aspect="AspectFill">
-
                     </Image>
                 </StackLayout>
             </StackLayout>

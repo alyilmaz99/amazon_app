@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace amazon_app
+namespace amazon_app.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AppShell : Shell
+    public partial class CategoryPage : ContentPage
     {
-        public AppShell()
+        public CategoryPage()
         {
-
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
-
+            
         }
     }
 }

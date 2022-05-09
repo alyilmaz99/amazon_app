@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="amazon_app.Views.CategoryPage">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+                <Frame Padding="0" Margin="10" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="#88ced8" CornerRadius="10" HeightRequest="50" >
+                    <SearchBar x:Name="MainSearchBar"
+                   Placeholder="Seacrh Amazon"
+                   BackgroundColor="Transparent"
+                   />
+                </Frame>
+                <StackLayout 
+                BackgroundColor="#c0f9ec"
+                HeightRequest="50"
+                Margin="0"
+                >
+                    <Button
+                    ImageSource="location.png"
+                    Text="Deliver to Turkey"
+                    VerticalOptions="Start"
+                    BackgroundColor="#c0f9ec"
+                    TextColor="Black"
+                    TextTransform="None"
+                    HorizontalOptions="Start"
+                    Padding="10"
+                    BorderColor="Transparent"
+                    BorderWidth="0"
+                    />
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

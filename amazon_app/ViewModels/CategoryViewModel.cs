@@ -7,6 +7,7 @@ using System.Text;
 
 namespace amazon_app.ViewModels
 {
+    
     public class CategoryViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -34,15 +35,15 @@ namespace amazon_app.ViewModels
             categories.Add(new Category
             {
                 ID = 0,
-                Name = "Mother's Day",
-                ImageSource = "MothersDay",
-            }); 
-            categories.Add(new Category
-            {
-                ID = 0,
                 Name = "PC",
                 ImageSource = "PC",
             });
+            categories.Add(new Category
+            {
+                ID = 0,
+                Name = "Mother's Day",
+                ImageSource = "MothersDay",
+            }); 
             categories.Add(new Category
             {
                 ID = 0,
