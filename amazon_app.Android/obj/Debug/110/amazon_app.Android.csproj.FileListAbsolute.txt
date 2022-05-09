@@ -598,3 +598,12 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\search.png
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\bell.png
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\loginscreen.png
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\msi1.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\acer.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\acer1.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\lenovo.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\lenovo1.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\msi.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\asus.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\razer.jpg
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\star.png

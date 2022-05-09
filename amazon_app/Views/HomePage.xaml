@@ -63,7 +63,7 @@
                     </CollectionView>
                 </ScrollView>
                 <CollectionView 
-                                HeightRequest="270"
+                                HeightRequest="180"
                                 ItemsLayout="HorizontalList"
                                 VerticalOptions="Start"
                                 ItemsSource="{Binding categories}">
@@ -76,25 +76,15 @@
                             <Grid Padding="0" >
                                 <Frame
                                     WidthRequest="150"
+                                    
                                 HasShadow="True"
                                 CornerRadius="5"
                                 Margin="10"
                                 Padding="0"
                                 >
-                                <Grid>
-                                   <StackLayout  Grid.Row="1" >
-                                            <Image Source="{Binding ImageSource}" 
-                                               Aspect="AspectFill">
-                                                <Image.GestureRecognizers>
-                                                    <TapGestureRecognizer
-                                                         Tapped="OnImageNameTapped"
-                                                         NumberOfTapsRequired="1" />
-                                                </Image.GestureRecognizers>
-                                            </Image>
-                                            
-                                        </StackLayout>
-                                        <StackLayout Grid.Row="0" HeightRequest="3">
-                                        <Label Text="{Binding Name}" 
+                                    <StackLayout>
+                                        <StackLayout>
+                                            <Label Text="{Binding Name}" 
                                                TextColor="Black" 
                                                FontSize="15" 
                                                FontAttributes="none"
@@ -103,8 +93,19 @@
                                                VerticalOptions="Start"
                                                HorizontalOptions="Center"
                                                />
+                                        <StackLayout>
+                                            <Image Source="{Binding ImageSource}" 
+                                               Aspect="AspectFill">
+                                                <Image.GestureRecognizers>
+                                                    <TapGestureRecognizer
+                                                         Tapped="OnImageNameTapped"
+                                                         NumberOfTapsRequired="1" />
+                                                </Image.GestureRecognizers>
+                                            </Image>
                                         </StackLayout>
-                                    </Grid>
+                                        
+                                        </StackLayout>
+                                    </StackLayout>
                                 </Frame>
                             </Grid>
                         </DataTemplate>

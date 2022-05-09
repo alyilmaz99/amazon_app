@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="amazon_app.Views.CategoryPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:amazon_app.ViewModels"
+             x:Class="amazon_app.Views.CategoryPage"
+             xmlns:cm="clr-namespace:amazon_app.Views"
+            NavigationPage.HasNavigationBar="false"
+             >
+                
     <ContentPage.Content>
 
         <ScrollView>
@@ -29,8 +34,33 @@
                     BorderColor="Transparent"
                     BorderWidth="0"
                     />
+                    <Label Text="RESULTS" TextColor="Black" FontSize="15" VerticalOptions="Start" Margin="10"/>
                 </StackLayout>
-                
+                <Grid Margin="10" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="acer.jpg" 
+                           HeightRequest="100" 
+                           HorizontalOptions="Start" 
+                           Margin="5,30,0,0" 
+                           Grid.Column="0"
+                           />
+                    <Label Text="Acer Nitro 5 AN515-55-53E5 Gaming Laptop" 
+                           TextColor="Black" 
+                           Margin=" 0,30,0,0"
+                           FontSize="20" 
+                           VerticalOptions="Start"
+                           Grid.Column="1" />
+                    <Image Source="star.png"
+                           VerticalOptions="End"
+                           Grid.Column="1"
+                           />
+
+                </Grid>
+
+
             </StackLayout>
         </ScrollView>
 

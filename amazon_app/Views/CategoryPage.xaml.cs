@@ -17,5 +17,6 @@ namespace amazon_app.Views
             InitializeComponent();
             
         }
+        
     }
 }
