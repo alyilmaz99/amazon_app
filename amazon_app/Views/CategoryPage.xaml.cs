@@ -20,6 +20,7 @@ namespace amazon_app.Views
         public async void ProductImage_Clicked(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new ProductDetailPage());
+            
         }
     }
 }

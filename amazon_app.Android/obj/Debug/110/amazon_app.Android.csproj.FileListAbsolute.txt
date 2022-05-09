@@ -607,3 +607,4 @@ C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\asus.jpg
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\razer.jpg
 C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\star.png
+C:\Users\Ali\source\repos\amazon_app\amazon_app\amazon_app.Android\obj\Debug\110\res\drawable\favorite.png

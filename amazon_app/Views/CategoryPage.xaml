@@ -54,11 +54,13 @@
                                        HeightRequest="100" 
                                        HorizontalOptions="Start" 
                                        Margin="5,30,0,0" 
-                                       Grid.Column="0">
+                                       Grid.Column="0"
+                                       x:Name="{Binding Name}">
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer
                                                          Tapped="ProductImage_Clicked"
-                                                         NumberOfTapsRequired="1" />
+                                                         NumberOfTapsRequired="1" 
+                                                         />
                                     </Image.GestureRecognizers>
                                 </Image>
                                 <Label Text="{Binding Name}" 
