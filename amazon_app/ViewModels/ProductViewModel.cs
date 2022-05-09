@@ -25,7 +25,7 @@ namespace amazon_app.ViewModels
         public ProductViewModel()
         {
             products = new ObservableCollection<Product>();
-            
+            addData();
         }
         private void addData()
         {

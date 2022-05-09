@@ -19,7 +19,7 @@
                 <Button BackgroundColor="#FFD580" Text="Sign in" TextTransform="None" Margin="10" BorderColor="Black" BorderWidth="1"/>
                 <Button BackgroundColor="#88ced8" Text="Create Account" TextTransform="None" Margin="10" BorderColor="Black" BorderWidth="1" />
             </StackLayout>
-            <Image Source="loginscreen.png" />
+            <Image Source="loginscreen.png" HeightRequest="300"  />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

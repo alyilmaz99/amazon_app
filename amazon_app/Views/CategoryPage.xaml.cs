@@ -17,6 +17,9 @@ namespace amazon_app.Views
             InitializeComponent();
             
         }
-        
+        public async void ProductImage_Clicked(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new ProductDetailPage());
+        }
     }
 }

@@ -36,30 +36,63 @@
                     />
                     <Label Text="RESULTS" TextColor="Black" FontSize="15" VerticalOptions="Start" Margin="10"/>
                 </StackLayout>
-                <Grid Margin="10" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150" />
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Image Source="acer.jpg" 
-                           HeightRequest="100" 
-                           HorizontalOptions="Start" 
-                           Margin="5,30,0,0" 
-                           Grid.Column="0"
-                           />
-                    <Label Text="Acer Nitro 5 AN515-55-53E5 Gaming Laptop" 
-                           TextColor="Black" 
-                           Margin=" 0,30,0,0"
-                           FontSize="20" 
-                           VerticalOptions="Start"
-                           Grid.Column="1" />
-                    <Image Source="star.png"
-                           VerticalOptions="End"
-                           Grid.Column="1"
-                           />
+                <CollectionView ItemsLayout="VerticalList"
+                                VerticalOptions="Start"
+                                ItemsSource="{Binding products}">
+                    <CollectionView.BindingContext>
+                        <vm:ProductViewModel>
+                        </vm:ProductViewModel>
+                    </CollectionView.BindingContext>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="10" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding ProductImage}" 
+                                       HeightRequest="100" 
+                                       HorizontalOptions="Start" 
+                                       Margin="5,30,0,0" 
+                                       Grid.Column="0">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                                         Tapped="ProductImage_Clicked"
+                                                         NumberOfTapsRequired="1" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <Label Text="{Binding Name}" 
+                                       TextColor="Black" 
+                                       Margin=" 0,30,0,0"
+                                       FontSize="18" 
+                                       VerticalOptions="Start"
+                                       Grid.Column="1" />
+                                <Label Text="$" 
+                                       VerticalOptions="End"
+                                       HorizontalOptions="Start"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       Grid.Column="1"/>
+                                <Label Text="{Binding Price}" 
+                                       VerticalOptions="End"
+                                       HorizontalOptions="Start"
+                                       FontSize="25"
+                                       Margin="15,0,0,0"
+                                       TextColor="Black"
+                                       Grid.Column="1"/>
 
-                </Grid>
-
+                                <Image Source="star.png"
+                                       VerticalOptions="Center"
+                                       Grid.Column="1"
+                                       HeightRequest="15"
+                                       HorizontalOptions="Start"
+                                       Margin="0,50,0,0"
+                                       BackgroundColor="Transparent"
+                           />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
             </StackLayout>
         </ScrollView>
