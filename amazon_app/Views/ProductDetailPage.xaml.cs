@@ -3,18 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using amazon_app.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using amazon_app.Views;
+using amazon_app.Service;
 
 namespace amazon_app.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProductDetailPage : ContentPage
+    public partial class ProductDetailPage : ContentPage 
     {
         public ProductDetailPage()
         {
             InitializeComponent();
+           
+        }
+        
+        public void Button_Clicked(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="amazon_app.Views.ProductDetailPage">
+             x:Class="amazon_app.Views.ProductDetailPage"
+             >
     <ContentPage.Content>
         
         <ScrollView>
@@ -29,15 +30,14 @@
                     BorderColor="Transparent"
                     BorderWidth="0"
                     />
-                   
+
                 </StackLayout>
-                
-                <Label Text="Acer Nitro 5 AN515 - 55 - 53E5 Gaming Laptop" Margin="10,0,0,0" FontSize="18" TextColor="Black"/>
-                <Image Source="star.png" HeightRequest="20" HorizontalOptions="Start" Margin="10,0,0,0"/>
-                <Image Source="acer.jpg" HeightRequest="200" WidthRequest="50"/>
-                <Label Text="Acer Nitro 5 AN515-55-53E5 Gaming Laptop | Intel Core i5-10300H | NVIDIA GeForce RTX 3050 Laptop GPU | 15.6'' FHD 144Hz IPS Display | 8GB DDR4 | 256GB NVMe SSD | Intel Wi - Fi 6 | Backlit Keyboard"
+                <Label Text="Acer Nitro 5 AN515 - 55 - 53E5 Gaming Laptop" Margin="10,0,0,0" FontSize="18" TextColor="Black" x:Name="ProductDetail"/>
+                        <Image Source="star.png" HeightRequest="20" HorizontalOptions="Start" Margin="10,0,0,0"/>
+                        <Image Source="acer.jpg" HeightRequest="200" WidthRequest="50"/>
+                        <Label Text="Acer Nitro 5 AN515-55-53E5 Gaming Laptop | Intel Core i5-10300H | NVIDIA GeForce RTX 3050 Laptop GPU | 15.6'' FHD 144Hz IPS Display | 8GB DDR4 | 256GB NVMe SSD | Intel Wi - Fi 6 | Backlit Keyboard"
                        FontSize="15" Margin="20" TextColor="Black"/>
-                <ImageButton Source="favorite.png" 
+                        <ImageButton Source="favorite.png" 
                              VerticalOptions="End" 
                              BackgroundColor="Transparent" 
                              HeightRequest="30"
@@ -48,6 +48,7 @@
                         CornerRadius="10"
                         Margin="10"
                         BackgroundColor="#FF9900"
+                        Clicked="Button_Clicked"
                         />
             </StackLayout>
         </ScrollView>

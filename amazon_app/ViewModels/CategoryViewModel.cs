@@ -8,7 +8,7 @@ using System.Text;
 namespace amazon_app.ViewModels
 {
     
-    public class CategoryViewModel : INotifyPropertyChanged
+    public class CategoryViewModel : INotifyPropertyChanged 
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

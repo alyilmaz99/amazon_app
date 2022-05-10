@@ -38,7 +38,11 @@
                 </StackLayout>
                 <CollectionView ItemsLayout="VerticalList"
                                 VerticalOptions="Start"
-                                ItemsSource="{Binding products}">
+                                ItemsSource="{Binding products}"
+                                x:Name="CategoryBinding"
+                                SelectionChanged="CategoryBinding_SelectionChanged"
+                                SelectionMode="Single"
+                                >
                     <CollectionView.BindingContext>
                         <vm:ProductViewModel>
                         </vm:ProductViewModel>
@@ -55,7 +59,7 @@
                                        HorizontalOptions="Start" 
                                        Margin="5,30,0,0" 
                                        Grid.Column="0"
-                                       x:Name="{Binding Name}">
+                                       >
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer
                                                          Tapped="ProductImage_Clicked"
@@ -68,7 +72,8 @@
                                        Margin=" 0,30,0,0"
                                        FontSize="18" 
                                        VerticalOptions="Start"
-                                       Grid.Column="1" />
+                                       Grid.Column="1"
+                                       />
                                 <Label Text="$" 
                                        VerticalOptions="End"
                                        HorizontalOptions="Start"

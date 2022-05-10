@@ -1,13 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:amazon_app.ViewModels"
              x:Class="amazon_app.Views.CartPage"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Frame Padding="0" Margin="10" BackgroundColor="#c0f9ec" HasShadow="True" BorderColor="#88ced8" CornerRadius="10" HeightRequest="50" >
+                    <SearchBar x:Name="MainSearchBar"
+                   Placeholder="Seacrh Amazon"
+                   BackgroundColor="Transparent"
+                   />
+                </Frame>
+                <StackLayout 
+                BackgroundColor="#c0f9ec"
+                HeightRequest="50"
+                Margin="0"
+                >
+                    <Button
+                    ImageSource="location.png"
+                    Text="Deliver to Turkey"
+                    VerticalOptions="Start"
+                    BackgroundColor="#c0f9ec"
+                    TextColor="Black"
+                    TextTransform="None"
+                    HorizontalOptions="Start"
+                    Padding="10"
+                    BorderColor="Transparent"
+                    BorderWidth="0"
+                    />
+                </StackLayout>
+                <CollectionView ItemsSource="{Binding products}"
+                                SelectionChanged="CollectionView_SelectionChanged"
+                                SelectionMode="Single">
+                    <CollectionView.BindingContext>
+                        <vm:ProductViewModel>
+                        </vm:ProductViewModel>
+                    </CollectionView.BindingContext>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid IsVisible="{Binding IsBasket}">
+                            <Image Grid.Column="0"
+                           Source="{Binding ProductImage}" 
+                           HeightRequest="150" 
+                           VerticalOptions="Start" 
+                           HorizontalOptions="Start"
+                           Margin="10"/>
+                            <Label Grid.Column="1"
+                           Text="{Binding Name}" 
+                           FontSize="18" 
+                           TextColor="Black"
+                           TextDecorations="None"
+                           Margin="10"/>
+                            <Label Text="$" Grid.Column="1" VerticalOptions="End" Margin="10,0,0,40" FontSize="17"/>
+                            <Label Text="{Binding Price}" Grid.Column="1" VerticalOptions="End" Margin="22,0,0,40" FontSize="25" TextColor="Black"/>
+                            <Button Text="Delete" Grid.Column="1" 
+                            WidthRequest="100"
+                            HeightRequest="40" 
+                            VerticalOptions="End" 
+                            HorizontalOptions="Center"
+                            BorderColor="Black"
+                            BorderWidth="0.1"
+                            BackgroundColor="White"
+                            Margin="0,0,0,0"
+                                    Clicked="Button_Clicked"/>
+                        </Grid>
+                            </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+                
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
